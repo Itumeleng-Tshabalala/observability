@@ -4,17 +4,17 @@
 
 *DONE:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 
-![Image: Kubectl get pods,svc Default namespace](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/kubectl-get-pods-svc-n-default.png "Pods and Services for Default namespace")
-![Image: Kubectl get pods,svc Monitoring namespace](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/kubectl-get-pods-svc-n-moniroring.png "Pods and Services for Monitoring namespace")
-![Image: Kubectl get pods,svc Observability namespace](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/kubectl-get-pods-svc-n-observability.png "Pods and Services for Observability namespace")
+![Image: Kubectl get pods,svc Default namespace](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/kubectl-get-pods-svc-n-default.png "Pods and Services for Default namespace")
+![Image: Kubectl get pods,svc Monitoring namespace](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/kubectl-get-pods-svc-n-moniroring.png "Pods and Services for Monitoring namespace")
+![Image: Kubectl get pods,svc Observability namespace](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/kubectl-get-pods-svc-n-observability.png "Pods and Services for Observability namespace")
 
 ## Setup the Jaeger and Prometheus source
 *DONE:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
-![Grafana Home Page Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/grafana-home-page.png "Grafana Home Page")
+![Grafana Home Page Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/grafana-home-page.png "Grafana Home Page")
 
 ## Create a Basic Dashboard
 *DONE:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
-![Grafana Dashboard Prometheus Datasource Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/sample-grafana-dashboard-with-prometheus-datasource.png "Grafana Dashboard with Prometheus Datasource")
+![Grafana Dashboard Prometheus Datasource Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/sample-grafana-dashboard-with-prometheus-datasource.png "Grafana Dashboard with Prometheus Datasource")
 
 ## Describe SLO/SLI
 *DONE:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
@@ -46,18 +46,18 @@ the amount of cpu utilisation of the service.
 
 ## Create a Dashboard to measure our SLIs
 *DONE:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
-![Uptime, 40x, and 50x Errors of Frontend and Backend Services Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/uptime-40x-50x-errors.png "Uptime, 40x, and 50x Errors of Frontend and Backend Services")
+![Uptime, 40x, and 50x Errors of Frontend and Backend Services Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/uptime-40x-50x-errors.png "Uptime, 40x, and 50x Errors of Frontend and Backend Services")
 
 ## Tracing our Flask App
 *DONE:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here.
 
 [Here is the python file](reference-app/backend/app.py) for the Jaeger span code.
 
-![Jaeger Span measuring the processes of the Backend Service Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/Jaeger-Span-of-the-Backend-Service.png "Jaeger Span measuring the processes of the Backend Service")
+![Jaeger Span measuring the processes of the Backend Service Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/Jaeger-Span-of-the-Backend-Service.png "Jaeger Span measuring the processes of the Backend Service")
 
 ## Jaeger in Dashboards
 *DONE:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
-![Jaeger Traces on Grafana Dashboard Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/jaeger-traces-on-grafana-dashboard.png "Jaeger Traces on Grafana Dashboard")
+![Jaeger Traces on Grafana Dashboard Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/jaeger-traces-on-grafana-dashboard.png "Jaeger Traces on Grafana Dashboard")
 
 ## Report Error
 *DONE:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue.
@@ -78,7 +78,7 @@ Severity: High
 
 Description: class 'NameError' error  - name 'error' is not defined
 
-![Error shown in jaeger trace Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/Error-shown-in-jaeger-trace.png "Error shown in jaeger trace")
+![Error shown in jaeger trace Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/Error-shown-in-jaeger-trace.png "Error shown in jaeger trace")
 
 
 ## Creating SLIs and SLOs
@@ -148,8 +148,8 @@ Panels listed are :
 - CPU Usage
 - Latency: Average response time
 
-![Final Dashboard 1 Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/Final-Dashboard-1.png "Final Dashboard 1")
+![Final Dashboard 1 Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/Final-Dashboard-1.png "Final Dashboard 1")
 
-![Final Dashboard 2 Image](https://github.com/Itumeleng-Tshabalala/metrics-dashboard/blob/main/answer-img/Final-Dashboard-2.png "Final Dashboard 2")
+![Final Dashboard 2 Image](https://github.com/Itumeleng-Tshabalala/observability/blob/main/answer-img/Final-Dashboard-2.png "Final Dashboard 2")
 
 
