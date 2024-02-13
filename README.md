@@ -87,6 +87,7 @@ Description: class 'NameError' error  - name 'error' is not defined
 1. Latency
 2. Errors
 3. Saturation
+4. Traffic 
 
 ## Building KPIs for our plan
 *DONE*: Now that we have our SLIs and SLOs, create KPIs to accurately measure these metrics. We will make a dashboard for this, but first write them down here.
@@ -106,6 +107,10 @@ Description: class 'NameError' error  - name 'error' is not defined
 - % CPU usage allocated per service as configured in yaml for example
 - % CPU usage available on host
 - Total number of requests received over time. Are there spikes in usage?
+
+**Traffic**
+- Amount of stress on a system from demand (such as the number of HTTP requests/second).
+- Calculates the average amount of data transferred over the network per unit of time.
 
 ### Example PromQL Queries for Some Metrics.
 
